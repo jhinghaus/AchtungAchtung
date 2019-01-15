@@ -28,7 +28,6 @@ class AlertEncoder(json.JSONEncoder):
             super().default(self, al)
 
 def main():
-    print('main')
     parser = argparse.ArgumentParser(description='Check for alerts')
     parser.add_argument('--area', '-a', type=str,
                         help='only alerts for areas containing this argument (default is all current alerts)',

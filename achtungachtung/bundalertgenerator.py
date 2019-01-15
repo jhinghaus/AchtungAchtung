@@ -22,7 +22,6 @@ class BundGenerator(alert.AlertGenerator):
         try:
             objects = res.json()
         except Exception as ex:
-            print(res.text)
             raise ex
         return objects
 
